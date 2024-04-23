@@ -24,7 +24,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="pull-right">
                             <a href="{% url 'organization-add' %}" class="btn btn-success btn-rounded">Add Organization</a>
                         </div>
@@ -32,7 +32,7 @@
                     </div>
 
                     <div class="card-body">
-                        <table class="table table-striped mt-3">
+                        <table class="table table-striped mt-9">
                             <thead>
                                 <tr>
                                     <th scope="col">Name</th>
@@ -49,6 +49,7 @@
                                     <td>{{ object.description }}</td>
                                     <td>
                                         <a href="organization_list/{{ object.id }}">Edit</a>
+                                        <a href="organization_list/{{ object.id }}/delete" class="text-danger">Delete</a>
                                        
                                    </td>
                                </tr>
