@@ -48,4 +48,3 @@ class Command(BaseCommand):
             )
         self.stdout.write(self.style.SUCCESS(
             'Initial data for student organization created successfully.'))
-      
